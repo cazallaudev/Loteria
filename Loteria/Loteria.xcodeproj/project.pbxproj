@@ -13,6 +13,8 @@
 		9B055A5A27CFEE0600C3A168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B055A5827CFEE0600C3A168 /* Main.storyboard */; };
 		9B055A5C27CFEE0900C3A168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B055A5B27CFEE0900C3A168 /* Assets.xcassets */; };
 		9B055A5F27CFEE0900C3A168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B055A5D27CFEE0900C3A168 /* LaunchScreen.storyboard */; };
+		B7D1B62827D145B10002470B /* SplashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D1B62727D145B10002470B /* SplashView.storyboard */; };
+		B7D1B62A27D145CF0002470B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1B62927D145CF0002470B /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9B055A5B27CFEE0900C3A168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B055A5E27CFEE0900C3A168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B055A6027CFEE0900C3A168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D1B62727D145B10002470B /* SplashView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashView.storyboard; sourceTree = "<group>"; };
+		B7D1B62927D145CF0002470B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		9B055A5127CFEE0600C3A168 /* Loteria */ = {
 			isa = PBXGroup;
 			children = (
+				B7D1B62527D145700002470B /* Resources */,
 				9B055A5227CFEE0600C3A168 /* AppDelegate.swift */,
 				9B055A5427CFEE0600C3A168 /* SceneDelegate.swift */,
 				9B055A5627CFEE0600C3A168 /* ViewController.swift */,
 				9B055A5827CFEE0600C3A168 /* Main.storyboard */,
-				9B055A5B27CFEE0900C3A168 /* Assets.xcassets */,
-				9B055A5D27CFEE0900C3A168 /* LaunchScreen.storyboard */,
 				9B055A6027CFEE0900C3A168 /* Info.plist */,
 			);
 			path = Loteria;
+			sourceTree = "<group>";
+		};
+		B7D1B62327D1452C0002470B /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1B62727D145B10002470B /* SplashView.storyboard */,
+				B7D1B62927D145CF0002470B /* SplashViewController.swift */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		B7D1B62427D145470002470B /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9B055A5D27CFEE0900C3A168 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		B7D1B62527D145700002470B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1B62627D1458D0002470B /* Assets */,
+				9B055A5B27CFEE0900C3A168 /* Assets.xcassets */,
+				B7D1B62327D1452C0002470B /* SplashView */,
+				B7D1B62427D145470002470B /* Launch Screen */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7D1B62627D1458D0002470B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +165,7 @@
 			files = (
 				9B055A5F27CFEE0900C3A168 /* LaunchScreen.storyboard in Resources */,
 				9B055A5C27CFEE0900C3A168 /* Assets.xcassets in Resources */,
+				B7D1B62827D145B10002470B /* SplashView.storyboard in Resources */,
 				9B055A5A27CFEE0600C3A168 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +180,7 @@
 				9B055A5727CFEE0600C3A168 /* ViewController.swift in Sources */,
 				9B055A5327CFEE0600C3A168 /* AppDelegate.swift in Sources */,
 				9B055A5527CFEE0600C3A168 /* SceneDelegate.swift in Sources */,
+				B7D1B62A27D145CF0002470B /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +329,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 969M668MA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Loteria/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,13 +358,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 969M668MA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Loteria/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
